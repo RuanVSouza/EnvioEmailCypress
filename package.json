@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cypress": "^14.0.1",
+    "cypress-plugin-api": "^2.11.2",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0"
+  }
+}
