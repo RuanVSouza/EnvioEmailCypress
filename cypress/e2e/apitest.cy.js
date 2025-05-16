@@ -1,10 +1,10 @@
 describe('Testando EmailNodeMailer', () => {
     it('Testando envio de email', () => {
         cy.api({
-            url: "https://api.delfos.im/solar-data/data-studio/device-types",
+            url: "url",
             method: "GET",
             headers: {
-                "api-key": "uXqU9w5IE6t4YYN5yK7OWmjUGH4WMng2",
+                "auth": "tokenAuthorization",
             },
         }).as('response');
 
@@ -15,7 +15,7 @@ describe('Testando EmailNodeMailer', () => {
         cy.get('@response').then((res) => {
             const test = res.body[0].id;
             cy.task('enviaEmail', {
-                remetente: 'ruan2014souza17@gmail.com, ruan2014victor@hotmail.com.br',
+                remetente: 'email1, email2',
                 assunto: 'Teste de email',
                 corpo: test
             })
