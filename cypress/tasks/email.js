@@ -11,8 +11,8 @@ module.exports = {
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                    user: 'ruan1710.testes@gmail.com',
-                    pass: 'auoy ezux jjhg obal'
+                    user: 'email that sends',
+                    pass: 'code gmail'
                 },
                 // tls: {
                 //     rejectUnauthorized: false
@@ -20,7 +20,7 @@ module.exports = {
             });
 
             const mailOptions = {
-                from: 'ruan1710.testes@gmail.com',
+                from: 'email1',
                 to: remetente,
                 subject: String(assunto),
                 text: String(corpo),
