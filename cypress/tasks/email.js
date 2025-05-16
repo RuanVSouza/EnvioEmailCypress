@@ -20,7 +20,7 @@ module.exports = {
             });
 
             const mailOptions = {
-                from: 'email1',
+                from: 'email that sends',
                 to: remetente,
                 subject: String(assunto),
                 text: String(corpo),
