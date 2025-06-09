@@ -11,7 +11,7 @@ describe('Testando EmailNodeMailer', () => {
         cy.get('@response').then((res) => {
             cy.log(res.body[0].name);
         });
-        //FUNCIONA 
+        
         cy.get('@response').then((res) => {
             const test = res.body[0].id;
             cy.task('enviaEmail', {
